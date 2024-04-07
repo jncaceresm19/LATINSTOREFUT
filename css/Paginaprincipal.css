@@ -79,3 +79,16 @@
     color: #030303;
     text-align: center;
 }
+
+.CONSULTA-btn:hover{
+    background-color: #383838;
+    color:aliceblue;
+}
+.CONSULTA-btn{
+    border-radius: 30px;
+    width: 120px;
+    height: 38px;
+    background-color: rgb(185, 63, 63);
+    border-color: rgb(240, 231, 219);
+    color: aliceblue;
+}
