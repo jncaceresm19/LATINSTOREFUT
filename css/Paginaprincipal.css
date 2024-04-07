@@ -1,0 +1,81 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.carrito-icon{
+    background-image: none;
+    width: 25px;
+    height: 25px;
+    position: relative;
+}
+.imgCarrousel{
+    width: 100%;
+    height: 47vw;
+}
+.home-icon{
+    width: 20px;
+    height: 18px;
+    position: center;
+}
+.send-icon{
+    background-image: none;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    background-image: none;
+}
+
+.body{
+    height: 5000px;
+    overflow-x: hidden;
+}
+.card-img-top {
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.text-center{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+
+}
+.card{
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: rgb(240, 231, 219);
+    margin-bottom: 20px;
+
+}
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+.btn-primary{
+    border-radius: 50px;
+    width: 120px;
+    background-color: rgb(185, 63, 63);
+    border-color: rgb(240, 231, 219);
+}
+.btn-primary:hover{
+    background-color: black;
+}
+.card-title{
+    text-align: center;
+}
+.card-text{
+    text-align: justify;
+}
+
+.container-end{
+    padding: 100px;
+    background-color: dark;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #030303;
+    text-align: center;
+}

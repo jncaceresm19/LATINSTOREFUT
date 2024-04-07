@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="css/Paginaprincipal.css" rel="stylesheet">
+  <!--Imagen de fondo-->
+    <style>
+      body{
+        background-image: url(imagenes/fondopagina.avif);
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+ <!--barra de menu-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <img class="img-logob" src="imagenes/balonllamas.png" alt="StoreFut" padding="10px" width="50" />
+    <a class="navbar-brand" href="#"><span class="text-warning">LATINS</span>TOREFUT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><img class="home-icon" src="imagenes/home.png" alt="inicio"> Inicio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Europa
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Alemania.html">Bundesliga</a></li>
+            <li><a class="dropdown-item" href="España.html">LaLiga</a></li>
+            <li><a class="dropdown-item" href="Francia.html">Ligue 1</a></li>
+            <li><a class="dropdown-item" href="Holanda.html">Eredivisie</a></li>
+            <li><a class="dropdown-item" href="Inglaterra.html">Premier League</a></li>
+            <li><a class="dropdown-item" href="Italia.html">Serie A Tim</a></li>
+          </ul>
+        </li>  
+        <li class="nav-item dropdown">  
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            SudAmerica
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="argentinca.html">Argentina</a></li>
+            <li><a class="dropdown-item" href="brasil.html">Brasil</a></li>
+            <li><a class="dropdown-item" href="Chile.html">Chile</a></li>
+            <li><a class="dropdown-item" href="Colombia.html">Colombia</a></li>
+            <li><a class="dropdown-item" href="Peru.html">Perú</a></li>
+            <li><a class="dropdown-item" href="Uruguay.html">Uruguay</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><img class="send-icon" src="imagenes/envios.png" alt="envios">    Envios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"> Contacto</a>
+        </li>
+        <li class="nav-item">
+          <i><a class="nav-link active" aria-current="page" href="carrito.html"><img class="carrito-icon" src="imagenes/carrito.png" alt="carrito"></a>
+          </i>
+        </li>
+      </ul> 
+    </div>
+  </div>
+</nav>
+   
+    <!--carrusel (fotos)-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="imagenes/carrusel/allianz_arena2.jpg" class="d-block w-100 img-carrusel" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/carrusel/united.jpg" class="d-block w-100 img-carrusel" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/carrusel/ajax.webp" class="d-block w-100 img-carrusel" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/carrusel/boca.jpg" class="d-block w-100 img-carrusel" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/carrusel/coloclo.jpg_large" class="d-block w-100 img-carrusel" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/carrusel/palmeiras.jpg" class="d-block w-100 img-carrusel" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div><br>
+    
+    <!--sección Clubes Europeos-->
+      <div class="container">
+        <h1 class="text-center">Clubes Europeos</h1><br>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="imagenes/logobundesliga.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Primera División Alemana</h5>
+                <p class="card-text">La Bundesliga se inauguro el 24 de Agosto del año 1963, hasta la fecha 
+                  se han disputado un total de 59 ediciones, El club mas ganador en la historia de la liga es 
+                  el FC BAYERN MÚNICH con mas 35 títulos nacionales.
+                  Deutsche Fußball Liga (DFL) es el organizador oficial de la liga.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="#" class="btn btn-primary ">Equipos</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="imagenes/laliga12.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Primera División Española</h5>
+                <p class="card-text">LaLiga se inauguro el 10 de febrero del año 1928, hasta la fecha 
+                  se han disputado un total de 92 ediciones, siendo el REAL MADRID el club mas ganador con 35 títulos. 
+                  Real Federación Española de Fútbol (RFEF) es el organizador oficial de LaLiga.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="#" class="btn btn-primary ">Equipos</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="imagenes/ligue-1SI.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Primera División Francesa</h5>
+                <p class="card-text">La Ligue 1 se inauguro el 11 de septiembre del año 1932, hasta la fecha 
+                  se han disputado un total de 73 ediciones, siendo el PARÍS SAINT-GERMAIN el club mas ganador con 45 títulos. 
+                  Ligue de Football Professionnel es el organizador oficial de la Ligue 1.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="#" class="btn btn-primary ">Equipos</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="imagenes/holanda.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Primera División Holandesa</h5>
+                <p class="card-text">La Liga se disputa desde el año 1897, aunque la Eredivisie 
+                  comenzó en la temporoda 1956-57, hasta la fecha se han disputado un total de 68 ediciones, 
+                  siendo el AJAX el club mas ganador con 21 títulos. Real Federación de Fútbol de los Países Bajos (KNVB) es el organizador 
+                  oficial.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="Holanda.html" class="btn btn-primary ">Equipos</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="imagenes/premierlogo.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Primera División Inglesa</h5>
+                <p class="card-text">La Premier League se inauguro el 15 de agosto del año 1992, hasta la fecha 
+                  se han disputado un total de 32 ediciones, siendo el MANCHESTER UNITED el club mas ganador con 20 títulos. 
+                  The Football Association (The FA) es el organizador oficial de la liga Inglesa.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="Inglaterra.html" class="btn btn-primary ">Equipos</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="imagenes/serieaAAA.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Primera División Italiana</h5>
+                <p class="card-text">La Serie A Tim se inauguro el 	6 de octubre del año 1929, hasta la fecha 
+                  se han disputado un total de 95 ediciones, siendo el club JUVENTUS DE TURIN el club mas ganador
+                  con 36 títulos de liga. Lega Serie A (LNPA) es el organizador oficial del campeonato profecional 
+                  de futbol italiano.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="Italia.html" class="btn btn-primary ">Equipos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--sección Clubes SUDAMERICANOS-->
+        <h1 class="text-center">Clubes SudAmerica</h1><br>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="imagenes/AFA.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Primera División Argentina</h5>
+                <p class="card-text">El campeonato de Primera División Argentino se inauguro el 12 de Abril del año 1891, hasta la fecha 
+                  se han disputado un total de 132 ediciones, El club con mas titulos es RIVER PLATE con 38 títulos nacionales.
+                 Liga Profesional de Fútbol Argentino es el organizador oficial de la liga.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="argentinca.html" class="btn btn-primary ">Equipos</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="imagenes/brasilogo.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Primera División Brasileña</h5>
+                <p class="card-text">El Brasileirao se inauguro el 23 de Agosto del año 1959, hasta la fecha 
+                  se han disputado un total de 69 ediciones, El club con mas ganador ese el PALMEIRAS con 12 títulos. 
+                  Confederación Brasileña de Fútbol (CBF) es el organizador oficial del campeonato paulista.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="brasil.html" class="btn btn-primary ">Equipos</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="imagenes/Chile.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Primera División Chilena</h5>
+                <p class="card-text">El Campeonato Nacional desde el 31 de mayo del año 1933, hasta la fecha se han 
+                  disputado un total de 90 ediciones, siendo COLO-COLO el club mas ganador con 33 títulos nacionales. 
+                  La ANFP es el organizador oficial del Campeonato Nacional Chileno.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="Chile.html" class="btn btn-primary ">Equipos</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="imagenes/colombia.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Primera División Colombiana</h5>
+                <p class="card-text">La liga nacional de futbol Colombiano se inaguro 15 de agosto del año 1948 , 
+                  hasta la fecha se han disputado un total de 75 ediciones, 
+                  siendo el club ATLETICO NACIONAL mas ganador con 17 títulos. 	División Mayor del Fútbol Colombiano 
+                  es el organizador oficial.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="Colombia.html" class="btn btn-primary ">Equipos</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="imagenes/Liga1Peru.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Primera División Peruana</h5>
+                <p class="card-text">La Primera División del futbol Peruano se inauguro el año 1966, hasta la fecha 
+                  se han disputado un total de 58 ediciones, siendo el club UNIVERSITARIO mas ganador con 27 títulos.
+                  Federación Peruana de Fútbol es el organizador oficial de la liga Inglesa.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="Peru.html" class="btn btn-primary ">Equipos</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="imagenes/uruguay.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Primera División Uruguaya</h5>
+                <p class="card-text">Primera División del futbol Uruguayo inauguro el año 1900, hasta la fecha 
+                  se han disputado un total de 124 ediciones, siendO PEÑAROL el club mas ganador
+                  con 51 títulos de liga. La Asociación Urug de futbol es el organizador oficial del campeonato Uruguayo.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="Uruguay.html" class="btn btn-primary ">Equipos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+    </div>
+    
+      </div>
+    </div>
+
+    <div class="container-end">
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+</html>

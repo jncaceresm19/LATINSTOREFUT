@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.body{
+    height: 5000px;
+    overflow-x: hidden;
+}
+ 
+.imglogo{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.img{
+    max-width: 100%;
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: center;
+}
+.container-title{
+    padding: 25px;
+    background-color: rgb(240, 223, 206);
+    margin-bottom: 20px;
+    color: #030303;
+    text-align: center;
+
+}
+.container{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 80px;
+    background-color:  rgb(255, 254, 254);
+    flex: 1;
+}
+
+.container-img{
+    background-color: rgb(255, 254, 254);
+    flex: 1;
+    position: center;
+}
+.container-info-prod{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 2px;
+}
+
+.container-precio{
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-precio span{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.container-detalles-prod{
+    margin-top: 1px;
+}
+
+.form-group{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-group select{
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    outline: none;   
+    color: #666;
+}
+.regist-name-num{
+    margin-top: 0px;
+}
+.container-detalles-prod-per{
+    width: 300px;
+}
+.container-detalles-prod-per h4{
+    font-size: 22px;
+}
+.container-detalles-prod-per h{
+    font-size: 16px;
+}
+
+.controls{
+    width: 118%;
+    height: 23px;
+    background: rgb(255, 255, 255);
+    padding: 5px;
+    border: 1px solid #666;
+}
+.container-add-cart{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b4b3b3;
+}
+.container-cantidad{
+    position: relative;
+}
+
+.input-cantidad{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 60px;
+    height: 100%;
+    color:#666;
+    font-weight: 500;
+}
+
+.btn-add-cart{
+    border: none;
+    background-color: #252525;
+    padding: 10px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-add-cart:hover{
+    color:#1bb3b4
+}
+
+.container-descrip{
+    padding-top: 2px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+}
+
+.text-descrip{
+    text-align:left;
+    color: #666;
+    margin-right: 30px;
+    text-align: justify;
+}
+
+.title-descrip{
+    font-weight: 700;
+}
+.container-info-descrip h4{
+    font-size: 20px;
+}
+.container-info-add{
+    padding-top: 2px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+}
+.text-info-add{
+    text-align:left;
+    padding-bottom: 12px;
+    color: #666;
+    margin-right: 30px;
+    text-align: justify;
+}
+.title-info-add{
+    font-weight: 700;
+}
+.container-info-add h4{
+    font-size: 22px;
+}
+.container-social{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+
+}
+.container-social h4{
+    font-size: 20px;
+}
+
+.container-btn-social{
+    display:flex;
+    gap: 15px;
+    border-right: 50px;
+    align-items: center;
+}
+.bi-instagram{
+    color: black;
+}
+.bi-facebook{
+    color: black;
+}
+.bi-twitter{
+    color: black;
+    margin-right: 30px;
+}
+
+.bi-instagram:hover{
+    color:#1bb3b4
+}
+.bi-facebook:hover{
+    color:#1bb3b4
+}
+.bi-twitter:hover{
+    color:#1bb3b4
+}
+.container-end{
+    padding: 30px;
+    background-color: dark;
+    margin-bottom: 10px;
+    color: #030303;
+    text-align: center;
+}
+
+.container-end button{
+    background-color: #383838;
+    border: none;
+}
+
+.container-end button a{
+    background-color: #383838;
+    border: none;
+}
+.container-end button a:hover{
+    background-color: #383838;
+}
+.CONSULTA-btn:hover{
+    background-color: #383838;
+}
+.CONSULTA-btn{
+    color: #faf2f2;
+}
