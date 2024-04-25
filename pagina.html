@@ -35,7 +35,9 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"><img class="home-icon" src="imagenes/home.png" alt="inicio"> Inicio</a>
+          <a class="nav-link active" aria-current="page" href="pagina.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+          </svg>  Inicio</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -64,14 +66,57 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"><img class="send-icon" src="imagenes/envios.png" alt="envios">    Envios</a>
+          <a class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+            <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
+          </svg>    Envios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="contacto.html"> Contacto</a>
+          <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"> Contacto</a>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Envianos tu consulta. Te contactaremos a la brevedad</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Ingresa tu Nombre:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Ingresa tu E-mail:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Mensaje:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-secondary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
         </li>
         <li class="nav-item">
-          <i><a class="nav-link active" aria-current="page" href="carrito.html"><img class="carrito-icon" src="imagenes/carrito.png" alt="carrito"></a>
-          </i>
+          <div>
+            <i><a class="nav-link active" aria-current="page" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg></a>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 id="offcanvasRightLabel">Tu Carrito de compras</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+            </i>
+          </div>
         </li>
       </ul> 
     </div>
@@ -112,198 +157,202 @@
     
     <!--sección Clubes Europeos-->
       <div class="container">
-        <h1 class="text-center">Clubes Europeos</h1><br>
-
+        <br><h1 class="text-center">Europa</h1>
+        <h3 class="text-center">Mas Vendidas</h3><br>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/logobundesliga.png" class="card-img-top" alt="...">
+              <img src="imagenes/Europa/Alemania/BAYERLOCAL.jpg" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Primera División Alemana</h5>
-                <p class="card-text">La Bundesliga se inauguro el 24 de Agosto del año 1963, hasta la fecha 
-                  se han disputado un total de 59 ediciones, El club mas ganador en la historia de la liga es 
-                  el FC BAYERN MÚNICH con mas 35 títulos nacionales.
-                  Deutsche Fußball Liga (DFL) es el organizador oficial de la liga.</p>
+                <h5 class="card-title fw-bold">BAYERN MUNICH Local 2023-2024</h5>
+                <p class="card-text">Es el club mas ganador en la historia de la Bundesliga con mas 35 títulos nacionales.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
-                <a href="alemania.html" class="btn btn-primary ">Equipos</a>
+                <a href="alemania.html" class="btn btn-primary ">Ver mas</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="imagenes/Europa/España/Polera_RealMadrid.webp" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">REAL MADRID Local 2023-2024</h5>
+                <p class="card-text">Es el club mas ganador en la historia de LaLiga con 35 títulos nacionales.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="españa.html" class="btn btn-primary ">Ver mas</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/laliga12.png" class="card-img-top" alt="...">
+              <img src="imagenes/Europa/Francia/polera_psg.jpg" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Primera División Española</h5>
-                <p class="card-text">LaLiga se inauguro el 10 de febrero del año 1928, hasta la fecha 
-                  se han disputado un total de 92 ediciones, siendo el REAL MADRID el club mas ganador con 35 títulos. 
-                  Real Federación Española de Fútbol (RFEF) es el organizador oficial de LaLiga.</p>
+                <h5 class="card-title fw-bold">PSG Local 2023-2024</h5>
+                <p class="card-text">Es el club mas ganador en la historia de la Ligue 1 con 45 títulos nacionales.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
-                <a href="españa.html" class="btn btn-primary ">Equipos</a>
+                <a href="#" class="btn btn-primary ">Ver mas</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/ligue-1SI.png" class="card-img-top" alt="...">
+              <img src="imagenes/Europa/Holanda/camisetaLOCAL.avif" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Primera División Francesa</h5>
-                <p class="card-text">La Ligue 1 se inauguro el 11 de septiembre del año 1932, hasta la fecha 
-                  se han disputado un total de 73 ediciones, siendo el PARÍS SAINT-GERMAIN el club mas ganador con 45 títulos. 
-                  Ligue de Football Professionnel es el organizador oficial de la Ligue 1.</p>
+                <h5 class="card-title fw-bold">AJAX FC Local 2023-2024</h5>
+                <p class="card-text">Es el club mas ganador en la historia de la Eredivisie con 21 títulos nacionales.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
-                <a href="#" class="btn btn-primary ">Equipos</a>
+                <a href="Holanda.html" class="btn btn-primary ">Ver mas</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/holanda.webp" class="card-img-top" alt="...">
+              <img src="imagenes/Europa/Inglaterra/localmunich.png=z-621,621_f-webp" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Primera División Holandesa</h5>
-                <p class="card-text">La Liga se disputa desde el año 1897, aunque la Eredivisie 
-                  comenzó en la temporoda 1956-57, hasta la fecha se han disputado un total de 68 ediciones, 
-                  siendo el AJAX el club mas ganador con 21 títulos. Real Federación de Fútbol de los Países Bajos (KNVB) es el organizador 
-                  oficial.</p>
+                <h5 class="card-title fw-bold">MAN. UNITED Local 2023-2024</h5>
+                <p class="card-text">Es el club mas ganador en la historia de la Premier League con 20 títulos nacionales.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
-                <a href="Holanda.html" class="btn btn-primary ">Equipos</a>
+                <a href="Inglaterra.html" class="btn btn-primary ">Ver mas</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/premierlogo.webp" class="card-img-top" alt="...">
+              <img src="imagenes/Europa/Italia/juvelocal.png=z-780,780_f-webp" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Primera División Inglesa</h5>
-                <p class="card-text">La Premier League se inauguro el 15 de agosto del año 1992, hasta la fecha 
-                  se han disputado un total de 32 ediciones, siendo el MANCHESTER UNITED el club mas ganador con 20 títulos. 
-                  The Football Association (The FA) es el organizador oficial de la liga Inglesa.</p>
+                <h5 class="card-title fw-bold">JUVENTUS Local 2023-2024</h5>
+                <p class="card-text">Es el club mas ganador de la Serie A Tim con 36 títulos nacionales.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
-                <a href="Inglaterra.html" class="btn btn-primary ">Equipos</a>
+                <a href="Italia.html" class="btn btn-primary ">Ver mas</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="imagenes/serieaAAA.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Primera División Italiana</h5>
-                <p class="card-text">La Serie A Tim se inauguro el 	6 de octubre del año 1929, hasta la fecha 
-                  se han disputado un total de 95 ediciones, siendo el club JUVENTUS DE TURIN el club mas ganador
-                  con 36 títulos de liga. Lega Serie A (LNPA) es el organizador oficial del campeonato profecional 
-                  de futbol italiano.</p>
-              </div>
-              <div class="d-flex justify-content-around mb-4">
-                <a href="Italia.html" class="btn btn-primary ">Equipos</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        </div><br><br>
 
         <!--sección Clubes SUDAMERICANOS-->
-        <h1 class="text-center">Clubes SudAmerica</h1><br>
-
+        <br><h1 class="text-center">Sudamerica</h1>
+        <h3 class="text-center">Mas Vendidas</h3><br>
+ 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/AFA.png" class="card-img-top" alt="...">
+              <img src="imagenes/Latinoamerica/ARGENTINA/RIVERLOCAL.webp" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Primera División Argentina</h5>
-                <p class="card-text">El campeonato de Primera División Argentino se inauguro el 12 de Abril del año 1891, hasta la fecha 
-                  se han disputado un total de 132 ediciones, El club con mas titulos es RIVER PLATE con 38 títulos nacionales.
-                 Liga Profesional de Fútbol Argentino es el organizador oficial de la liga.</p>
+                <h5 class="card-title fw-bold">RIVER PLATE Local 2023-2024</h5>
+                <El class="card-text">Es el club mas ganador del Fútbol Argentino con 38 títulos nacionales.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
-                <a href="argentinca.html" class="btn btn-primary ">Equipos</a>
+                <a href="argentinca.html" class="btn btn-primary ">Ver mas</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/brasilogo.png" class="card-img-top" alt="...">
+              <img src="imagenes/Latinoamerica/ARGENTINA/ARGENTINALOCAL.jpeg" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Primera División Brasileña</h5>
-                <p class="card-text">El Brasileirao se inauguro el 23 de Agosto del año 1959, hasta la fecha 
-                  se han disputado un total de 69 ediciones, El club con mas ganador ese el PALMEIRAS con 12 títulos. 
-                  Confederación Brasileña de Fútbol (CBF) es el organizador oficial del campeonato paulista.</p>
+                <h5 class="card-title fw-bold">ARGENTINA Local 2024-2025</h5>
+                <p class="card-text">Una de las selecciones mas ganadoras de Sudamerica y actual campeona de Copa America y Copa del Mundo.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
-                <a href="brasil.html" class="btn btn-primary ">Equipos</a>
+                <a href="Uruguay.html" class="btn btn-primary ">Ver mas</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/Chile.png" class="card-img-top" alt="...">
+              <img src="imagenes/Latinoamerica/ARGENTINA/BOCALOCAL.webp" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Primera División Chilena</h5>
-                <p class="card-text">El Campeonato Nacional desde el 31 de mayo del año 1933, hasta la fecha se han 
-                  disputado un total de 90 ediciones, siendo COLO-COLO el club mas ganador con 33 títulos nacionales. 
-                  La ANFP es el organizador oficial del Campeonato Nacional Chileno.</p>
+                <h5 class="card-title fw-bold">BOCA JUNIORS Local 2023-2024</h5>
+                <p class="card-text">Boca Juniors Es uno de los 2 clubes mas ganadores del Fútbol Argentino con 35 títulos nacionales.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
-                <a href="Chile.html" class="btn btn-primary ">Equipos</a>
+                <a href="Uruguay.html" class="btn btn-primary ">Ver mas</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/colombia.png" class="card-img-top" alt="...">
+              <img src="imagenes/Latinoamerica/brasil/FLUMILOCAL.jpg" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Primera División Colombiana</h5>
-                <p class="card-text">La liga nacional de futbol Colombiano se inaguro 15 de agosto del año 1948 , 
-                  hasta la fecha se han disputado un total de 75 ediciones, 
-                  siendo el club ATLETICO NACIONAL mas ganador con 17 títulos. 	División Mayor del Fútbol Colombiano 
-                  es el organizador oficial.</p>
+                <h5 class="card-title fw-bold">FLUMINENSE Local 2023-2024</h5>
+                <p class="card-text">Es uno de los 5 clubes mas populares de Brasil y actual campeon de la Copa Libertadores de America.  </p>
               </div>
               <div class="d-flex justify-content-around mb-4">
-                <a href="Colombia.html" class="btn btn-primary ">Equipos</a>
+                <a href="brasil.html" class="btn btn-primary ">Ver mas</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/Liga1Peru.png" class="card-img-top" alt="...">
+              <img src="imagenes/Latinoamerica/chile/COLOLOCAL.avif" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Primera División Peruana</h5>
-                <p class="card-text">La Primera División del futbol Peruano se inauguro el año 1966, hasta la fecha 
-                  se han disputado un total de 58 ediciones, siendo el club UNIVERSITARIO mas ganador con 27 títulos.
-                  Federación Peruana de Fútbol es el organizador oficial de la liga Inglesa.</p>
+                <h5 class="card-title fw-bold">COLO-COLO Local 2023-2024</h5>
+                <p class="card-text">Es el club mas ganador del Campeonato Chileno con 33 títulos y unico campeon de Copa Libertadores.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
-                <a href="Peru.html" class="btn btn-primary ">Equipos</a>
+                <a href="Chile.html" class="btn btn-primary ">Ver mas</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/uruguay.png" class="card-img-top" alt="...">
+              <img src="imagenes/Latinoamerica/colombia/NACIONALLOCAL.webp" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Primera División Uruguaya</h5>
-                <p class="card-text">Primera División del futbol Uruguayo inauguro el año 1900, hasta la fecha 
-                  se han disputado un total de 124 ediciones, siendO PEÑAROL el club mas ganador
-                  con 51 títulos de liga. La Asociación Urug de futbol es el organizador oficial del campeonato Uruguayo.</p>
+                <h5 class="card-title fw-bold">ATLETICO NACIONAL Local 2023-2024</h5>
+                <p class="card-text">Es el club mas ganador de la competicion con 17 títulos nacionales.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
-                <a href="Uruguay.html" class="btn btn-primary ">Equipos</a>
+                <a href="Colombia.html" class="btn btn-primary ">Ver mas</a>
               </div>
             </div>
           </div>
         </div>
-
-
-
-    </div>
+    </div><br><br>
     
-      </div>
-    </div>
 
-    <div class="container-end">
-    </div>
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#">
+              <img src="imagenes/balonllamas.png" alt="logopagina">
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, provident?</P>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, provident?</P>
+        </div>
+        <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="social-media">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+            </svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+              <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+            </svg></a>
+          </div>          
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small>&copy; 2024 <b>LATINSTOREFUT</b> - Todos los Derechos Reservados.</small>
+      </div>
+    </footer>
+
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
