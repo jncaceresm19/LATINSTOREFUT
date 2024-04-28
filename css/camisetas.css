@@ -2,13 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 .body{
     height: 5000px;
     overflow-x: hidden;
 }
- 
+/*navbar*/
+.dropdown-item{
+    color:aliceblue;
+}
+.dropdown-item:hover{
+    background-color:rgba(48, 48, 48, 0);
+    color:rgba(155, 154, 154, 0.836);
+}
+.nav-link:hover{
+    color:rgba(155, 154, 154, 0.836);
+}
+/**/
 .imglogo{
     margin-bottom: 20px;
     margin-top: 20px;
@@ -22,36 +32,41 @@
     padding: 30px;
     justify-content: center;
 }
-.container-title{
+/*containers equipos*/
+.contenedor{
+    display: flex;
+    gap: 5px;
+    background-color:  rgb(255, 254, 254);
+    width: 90%; 
+    margin: 80px auto;
+}
+.contenedor-title{
     padding: 25px;
     background-color: rgb(240, 223, 206);
     margin-bottom: 20px;
     color: #030303;
-    text-align: center;
-
+    text-align: center;  
 }
-.container{
+.contenedor-img {
     display: flex;
-    gap: 5px;
-    margin-bottom: 80px;
-    background-color:  rgb(255, 254, 254);
-    flex: 1;
-}
-
-.container-img{
+    justify-content: center; 
+    align-items: center; 
     background-color: rgb(255, 254, 254);
-    flex: 1;
-    position: center;
+    margin-top: 50px;
 }
-.container-info-prod{
+.contenedor-img img {
+    max-width: 100%; 
+    max-height: 100%; 
+}
+.contenedor-info-prod{
     flex: 2;
     display: flex;
     flex-direction: column;
     gap: 15px;
     margin-top: 2px;
+    margin-left: 10px;
 }
-
-.container-precio{
+.contenedor-precio{
     padding-bottom: 8px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.219);
     display: flex;
@@ -59,12 +74,12 @@
     justify-content: space-between;
 }
 
-.container-precio span{
+.contenedor-precio span{
     font-size: 24px;
     font-weight: 300;
 }
 
-.container-detalles-prod{
+.contenedor-detalles-prod{
     margin-top: 1px;
 }
 
@@ -74,8 +89,9 @@
     gap: 20px;
 }
 
-.form-group select{
-    width: 300px;
+.form-group select {
+    width: 100%; 
+    max-width: 260px; 
     background-color: rgb(255, 255, 255);
     outline: none;   
     color: #666;
@@ -83,13 +99,13 @@
 .regist-name-num{
     margin-top: 0px;
 }
-.container-detalles-prod-per{
+.contenedor-detalles-prod-per{
     width: 300px;
 }
-.container-detalles-prod-per h4{
+.contenedor-detalles-prod-per h4{
     font-size: 22px;
 }
-.container-detalles-prod-per h{
+.contenedor-detalles-prod-per h{
     font-size: 16px;
 }
 
@@ -100,14 +116,18 @@
     padding: 5px;
     border: 1px solid #666;
 }
-.container-add-cart{
+.contenedor-add-cart{
     display: flex;
     gap: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #b4b3b3;
 }
-.container-cantidad{
+.contenedor-cantidad {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    max-width: 150px; 
 }
 
 .input-cantidad{
@@ -119,7 +139,7 @@
     font-weight: 500;
 }
 
-.btn-add-cart{
+.btn-add-cart {
     border: none;
     background-color: #252525;
     padding: 10px;
@@ -131,12 +151,11 @@
     font-weight: 700;
     cursor: pointer;
 }
-
 .btn-add-cart:hover{
-    color:#1bb3b4
+    color:#309b9b
 }
 
-.container-descrip{
+.contenedor-descrip{
     padding-top: 2px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.219);
 }
@@ -151,10 +170,10 @@
 .title-descrip{
     font-weight: 700;
 }
-.container-info-descrip h4{
+.contenedor-info-descrip h4{
     font-size: 20px;
 }
-.container-info-add{
+.contenedor-info-add{
     padding-top: 2px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.219);
 }
@@ -168,22 +187,20 @@
 .title-info-add{
     font-weight: 700;
 }
-.container-info-add h4{
+.contenedor-info-add h4{
     font-size: 22px;
 }
-.container-social{
+.contenedor-social{
     display: flex;
     justify-content: space-between;
     padding: 8px 0;
     align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
-
 }
-.container-social h4{
-    font-size: 20px;
+.contenedor-social h6{
+    padding-left: 25px;
 }
 
-.container-btn-social{
+.contenedor-btn-social{
     display:flex;
     gap: 15px;
     border-right: 50px;
@@ -199,7 +216,6 @@
     color: black;
     margin-right: 30px;
 }
-
 .bi-instagram:hover{
     color:#1bb3b4
 }
@@ -209,29 +225,98 @@
 .bi-twitter:hover{
     color:#1bb3b4
 }
-.container-end{
-    padding: 30px;
-    background-color: dark;
-    margin-bottom: 10px;
-    color: #030303;
-    text-align: center;
-}
-
-.container-end button{
-    background-color: #383838;
-    border: none;
-}
-
-.container-end button a{
-    background-color: #383838;
-    border: none;
-}
-.container-end button a:hover{
-    background-color: #383838;
-}
+/*consultas*/
 .CONSULTA-btn:hover{
     background-color: #383838;
 }
 .CONSULTA-btn{
     color: #faf2f2;
 }
+/*boton subir*/
+.btn-subir{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #ffffff;
+    color:#1bb3b4;
+    border-color: #1bb3b4;
+    border: 3px solid #1bb3b4;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0,0.3);
+}
+.btn-subir:hover{
+    text-decoration: none;
+    background: #1bb3b4;
+    color:#ffffff;
+    border-color: #ffffff;
+    border: 3px solid #ffffff;
+}
+
+/*pie de pagina*/
+.pie-pagina {
+    position: static;
+    width: 100%;
+    background-color: #0a141d;
+    color: white; 
+    text-align: center; 
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0p;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #e6dfdfea;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .social-media a{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .social-media a:hover{
+    color:#1bb3b4
+}
+.pie-pagina .grupo-2{
+    padding: 15px 10px;
+    text-align: center;
+    color: #e6dfdfea;
+}
+@media screen and (max-width: 800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0p;
+    }
+}
+
