@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link href="css/Paginaprincipal.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!--Imagen de fondo-->
     <style>
       body{
@@ -24,26 +25,24 @@
     </style>
   </head>
   <body>
- <!--barra de menu-->
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!--barra de menu-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <img class="img-logob" src="imagenes/balonllamas.png" alt="StoreFut" padding="10px" width="50" />
-    <a class="navbar-brand" href="#"><span class="text-warning">LATINS</span>TOREFUT</a>
+    <a class="navbar-brand"><span class="text-warning">LATINS</span>TOREFUT</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="pagina.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
-          </svg>  Inicio</a>
+          <a class="nav-link active" aria-current="page" href="pagina.html"><i class="bi bi-house-fill"></i>  Inicio</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Europa
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="Alemania.html">Bundesliga</a></li>
             <li><a class="dropdown-item" href="España.html">LaLiga</a></li>
             <li><a class="dropdown-item" href="Francia.html">Ligue 1</a></li>
@@ -53,10 +52,10 @@
           </ul>
         </li>  
         <li class="nav-item dropdown">  
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             SudAmerica
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="argentinca.html">Argentina</a></li>
             <li><a class="dropdown-item" href="brasil.html">Brasil</a></li>
             <li><a class="dropdown-item" href="Chile.html">Chile</a></li>
@@ -66,9 +65,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
-            <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
-          </svg>    Envios</a>
+          <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-send-fill"></i> Envios</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"> Contacto</a>
@@ -103,63 +100,44 @@
             </div>
         </div> 
         </li>
-          <div>
-            <i><a class="nav-link active" aria-current="page" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-              </svg></a>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                  <h5 id="offcanvasRightLabel">Tu Carrito de compras</h5>
-                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
+        <!-- Otros elementos del menú -->
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <i class="bi bi-person-fill"></i>
+          </a>
+        </li>
+        <!-- Modal de Inicio de Sesión -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-        </div>
-    </div> 
-    </li>
-    <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-    </a>
-    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-      <!-- Otros elementos del menú -->
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
-          <img src="imagenes/Usuario.png" alt="Inicio de Sesión" width="24" height="24">
-        </a>
-      </li>
-    </ul>
-        
-    </ul><!-- Modal de Inicio de Sesión -->
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form id="loginForm">
-              <div class="mb-3">
-                <label for="loginEmail" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="loginEmail" required>
-              </div>
-              <div class="mb-3">
-                <label for="loginPassword" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="loginPassword" required>
-              </div>
-              <div class="d-grid">
-                <button type="submit" class="btn btn-primary">Ingresar</button>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">Registrarse</button>
+            <div class="modal-body">
+              <form id="loginForm">
+                <div class="mb-3">
+                  <label for="loginEmail" class="form-label">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="loginEmail" required>
+                </div>
+                <div class="mb-3">
+                  <label for="loginPassword" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="loginPassword" required>
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary">Ingresar</button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">Registrarse</button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- Modal de Registro -->
-    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        </div>
+        <!-- Modal de Registro -->
+        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div class="modal-header">
@@ -226,25 +204,32 @@
               </div>
               <div class="col-12">
                 <button class="btn btn-primary" type="submit">Registrarse</button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
               </div>
             </form>
           </div>
         </div>
       </div>
-    </div>
-                  
-                  
-            </i>
-          </div>
-        </li>
-      </ul> 
+        </div>
+        <li class="nav-item">
+        <div>
+          <i><a class="nav-link active" aria-current="page" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <i class="bi bi-cart-fill"></i></a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">Tu Carrito de compras</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+         </i>
+       </div>
+    </li>
+    </ul> 
     </div>
   </div>
-</nav>
+  </nav>
    
-    <!--carrusel (fotos)-->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <!--carrusel (fotos)-->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="5000">
           <img src="imagenes/carrusel/allianz_arena2.jpg" class="d-block w-100 img-carrusel" alt="...">
@@ -273,32 +258,47 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div><br>
+  </div><br>
     
-    <!--sección Clubes Europeos-->
-      <div class="container">
-        <br><h1 class="text-center">Europa</h1>
-        <h3 class="text-center">Mas Vendidas</h3><br>
+  <!--sección Clubes Europeos-->
+  <div class="container">
+    <h3 class="text-center">Camisetas más vendidas sección Europa</h3><br>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <div class="col-md-4">
-            <div class="card">
-              <img src="imagenes/Europa/Alemania/BAYERLOCAL.jpg" class="card-img-top img-fluid" alt="...">
-              <div class="card-body">
-                <h5 class="card-title fw-bold">BAYERN MUNICH Local 2023-2024</h5>
-                <p class="card-text">Es el club mas ganador en la historia de la Bundesliga con mas 35 títulos nacionales.</p>
-              </div>
-              <div class="d-flex justify-content-around mb-4">
-                <a href="alemania.html" class="btn btn-primary ">Ver mas</a>
-              </div>
-            </div>
-          </div>
 
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/Europa/España/Polera_RealMadrid.webp" class="card-img-top img-fluid" alt="...">
+              <img src="imagenes/Europa/Alemania/BAYERLOCAL.jpg" class="card-img img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title fw-bold">REAL MADRID Local 2023-2024</h5>
-                <p class="card-text">Es el club mas ganador en la historia de LaLiga con 35 títulos nacionales.</p>
+                <h4 class="card-title fw-bold">BAYERN MUNCHEN</h4>
+                <h5 class="card-title fw-bold">Local 2023-2024</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="Alemania.html" class="btn btn-primary ">Ver mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="imagenes/Europa/España/Polera_RealMadrid.webp" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">REAL MADRID</h4>
+                <h5 class="card-title fw-bold">Local 2023-2024</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
                 <a href="españa.html" class="btn btn-primary ">Ver mas</a>
@@ -307,22 +307,38 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/Europa/Francia/polera_psg.jpg" class="card-img-top img-fluid" alt="...">
+              <img src="imagenes/Europa/Francia/polera_psg.jpg" class="card-img img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title fw-bold">PSG Local 2023-2024</h5>
-                <p class="card-text">Es el club mas ganador en la historia de la Ligue 1 con 45 títulos nacionales.</p>
+                <h4 class="card-title fw-bold">PSG</h4>
+                <h5 class="card-title fw-bold">Local 2023-2024</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
-                <a href="#" class="btn btn-primary ">Ver mas</a>
+                <a href="Alemania.html" class="btn btn-primary ">Ver mas</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/Europa/Holanda/camisetaLOCAL.avif" class="card-img-top img-fluid" alt="...">
+              <img src="imagenes/Europa/Holanda/Camiseta_Uniforme_Local_Ajax_de_Amsterdam_22-23_Rojo_H58243_01_laydown.avif" class="card-img img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title fw-bold">AJAX FC Local 2023-2024</h5>
-                <p class="card-text">Es el club mas ganador en la historia de la Eredivisie con 21 títulos nacionales.</p>
+                <h4 class="card-title fw-bold">AJAX FC</h4>
+                <h5 class="card-title fw-bold">Local 2023-2024</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
                 <a href="Holanda.html" class="btn btn-primary ">Ver mas</a>
@@ -331,10 +347,18 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/Europa/Inglaterra/localmunich.png=z-621,621_f-webp" class="card-img-top img-fluid" alt="...">
+              <img src="imagenes/Europa/Inglaterra/localmunich.png=z-621,621_f-webp" class="card-img img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title fw-bold">MAN. UNITED Local 2023-2024</h5>
-                <p class="card-text">Es el club mas ganador en la historia de la Premier League con 20 títulos nacionales.</p>
+                <h4 class="card-title fw-bold">MAN. UNITED</h4>
+                <h5 class="card-title fw-bold">Local 2023-2024</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
                 <a href="Inglaterra.html" class="btn btn-primary ">Ver mas</a>
@@ -343,10 +367,18 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/Europa/Italia/juvelocal.png=z-780,780_f-webp" class="card-img-top img-fluid" alt="...">
+              <img src="imagenes/Europa/Italia/juvelocal.png=z-780,780_f-webp" class="card-img img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title fw-bold">JUVENTUS Local 2023-2024</h5>
-                <p class="card-text">Es el club mas ganador de la Serie A Tim con 36 títulos nacionales.</p>
+                <h4 class="card-title fw-bold">JUVENTUS</h4>
+                <h5 class="card-title fw-bold">Local 2023-2024</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
                 <a href="Italia.html" class="btn btn-primary ">Ver mas</a>
@@ -356,16 +388,23 @@
         </div><br><br>
 
         <!--sección Clubes SUDAMERICANOS-->
-        <br><h1 class="text-center">Sudamerica</h1>
-        <h3 class="text-center">Mas Vendidas</h3><br>
+        <h3 class="text-center">Camisetas más vendidas sección Sudamérica</h3><br>
  
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/Latinoamerica/ARGENTINA/RIVERLOCAL.webp" class="card-img-top img-fluid" alt="...">
+              <img src="imagenes/Latinoamerica/ARGENTINA/RIVERLOCAL.webp" class="card-img img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title fw-bold">RIVER PLATE Local 2023-2024</h5>
-                <El class="card-text">Es el club mas ganador del Fútbol Argentino con 38 títulos nacionales.</p>
+                <h4 class="card-title fw-bold">RIVER PLATE</h4>
+                <h5 class="card-title fw-bold">Local 2023-2024</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
                 <a href="argentinca.html" class="btn btn-primary ">Ver mas</a>
@@ -374,10 +413,18 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/Latinoamerica/ARGENTINA/ARGENTINALOCAL.jpeg" class="card-img-top img-fluid" alt="...">
+              <img src="imagenes/Latinoamerica/ARGENTINA/ARGENTINALOCAL.jpeg" class="card-img img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title fw-bold">ARGENTINA Local 2024-2025</h5>
-                <p class="card-text">Una de las selecciones mas ganadoras de Sudamerica y actual campeona de Copa America y Copa del Mundo.</p>
+                <h4 class="card-title fw-bold">ARGENTINA</h4>
+                <h5 class="card-title fw-bold">Local 2023-2024</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
                 <a href="Uruguay.html" class="btn btn-primary ">Ver mas</a>
@@ -386,10 +433,18 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/Latinoamerica/ARGENTINA/BOCALOCAL.webp" class="card-img-top img-fluid" alt="...">
+              <img src="imagenes/Latinoamerica/ARGENTINA/BOCALOCAL.webp" class="card-img img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title fw-bold">BOCA JUNIORS Local 2023-2024</h5>
-                <p class="card-text">Boca Juniors Es uno de los 2 clubes mas ganadores del Fútbol Argentino con 35 títulos nacionales.</p>
+                <h4 class="card-title fw-bold">BOCA JUNIORS</h4>
+                <h5 class="card-title fw-bold">Local 2023-2024</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
                 <a href="Uruguay.html" class="btn btn-primary ">Ver mas</a>
@@ -398,10 +453,18 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/Latinoamerica/brasil/FLUMILOCAL.jpg" class="card-img-top img-fluid" alt="...">
+              <img src="imagenes/Latinoamerica/brasil/FLUMILOCAL.jpg" class="card-img img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title fw-bold">FLUMINENSE Local 2023-2024</h5>
-                <p class="card-text">Es uno de los 5 clubes mas populares de Brasil y actual campeon de la Copa Libertadores de America.  </p>
+                <h4 class="card-title fw-bold">FLUMINENSE</h4>
+                <h5 class="card-title fw-bold">Local 2023-2024</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
                 <a href="brasil.html" class="btn btn-primary ">Ver mas</a>
@@ -410,10 +473,18 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/Latinoamerica/chile/COLOLOCAL.avif" class="card-img-top img-fluid" alt="...">
+              <img src="imagenes/Latinoamerica/chile/COLOLOCAL.avif" class="card-img img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title fw-bold">COLO-COLO Local 2023-2024</h5>
-                <p class="card-text">Es el club mas ganador del Campeonato Chileno con 33 títulos y unico campeon de Copa Libertadores.</p>
+                <h4 class="card-title fw-bold">COLO-COLO </h4>
+                <h5 class="card-title fw-bold">Local 2023-2024</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
                 <a href="Chile.html" class="btn btn-primary ">Ver mas</a>
@@ -422,10 +493,18 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/Latinoamerica/colombia/NACIONALLOCAL.webp" class="card-img-top img-fluid" alt="...">
+              <img src="imagenes/Latinoamerica/colombia/NACIONALLOCAL.webp" class="card-img img-fluid" alt="...">
               <div class="card-body">
-                <h5 class="card-title fw-bold">ATLETICO NACIONAL Local 2023-2024</h5>
-                <p class="card-text">Es el club mas ganador de la competicion con 17 títulos nacionales.</p>
+                <h4 class="card-title fw-bold">ATLETICO NACIONAL</h4>
+                <h5 class="card-title fw-bold">Local 2023-2024</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
                 <a href="Colombia.html" class="btn btn-primary ">Ver mas</a>
@@ -433,10 +512,14 @@
             </div>
           </div>
         </div>
-    </div><br><br>
-    
+  </div><br><br>
+   <!--boton subir-->
+   <a href="#" class="btn-subir">
+    <i class="bi bi-arrow-up"></i>
+   </a>
 
-    <footer class="pie-pagina">
+  <!--footer-->
+  <footer class="pie-pagina">
       <div class="grupo-1">
         <div class="box">
           <figure>
@@ -462,16 +545,13 @@
             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
               <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
             </svg></a>
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-              <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-            </svg></a>
-          </div>          
+          </div>         
         </div>
       </div>
       <div class="grupo-2">
         <small>&copy; 2024 <b>LATINSTOREFUT</b> - Todos los Derechos Reservados.</small>
       </div>
-    </footer>
+  </footer>
 
   </body>
   <script>
@@ -519,5 +599,4 @@
       });
     });
   </script>
-
 </html>
