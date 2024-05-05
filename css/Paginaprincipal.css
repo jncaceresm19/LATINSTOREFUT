@@ -12,7 +12,10 @@
     background-color:rgba(48, 48, 48, 0);
     color:rgba(155, 154, 154, 0.836);
 }
-.nav-link:hover{
+.bi-cart-fill{
+    color:rgb(207, 207, 207); 
+}
+.bi-cart-fill:hover{
     color:rgba(155, 154, 154, 0.836);
 }
 /*imagen carrusel*/
