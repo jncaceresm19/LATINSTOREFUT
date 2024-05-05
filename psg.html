@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MANCHESTER</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="css/camisetas.css" rel="stylesheet" />
+    <link href="css/Paginaprincipal.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!--Imagen de fondo-->
+    <style>
+      body {
+        background-image: url(imagenes/fondopagina.avif);
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+ <!--barra de menu-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <img class="img-logob" src="imagenes/balonllamas.png" alt="StoreFut" padding="10px" width="50" />
+    <a class="navbar-brand"><span class="text-warning">LATINS</span>TOREFUT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="pagina.html"><i class="bi bi-house-fill"></i>  Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Restodelmundo.html"><i></i>Resto del Mundo</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Chile
+          </a>
+          <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="selechile.html">Selección Chilena </a></li>
+            <li><a class="dropdown-item" href="COLOCOLO.HTML">COLO-COLO</a></li>
+            <li><a class="dropdown-item" href="Uchile.html">Universidad de Chile</a></li>
+          </ul>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-send-fill"></i> Envios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"> Contacto</a>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Envianos tu consulta. Te contactaremos a la brevedad</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Ingresa tu Nombre:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Ingresa tu E-mail:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Mensaje:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-secondary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <i class="bi bi-person-fill"></i>
+          </a>
+        </li>
+        <!-- Modal de Inicio de Sesión -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="loginForm">
+                <div class="mb-3">
+                  <label for="loginEmail" class="form-label">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="loginEmail" required>
+                </div>
+                <div class="mb-3">
+                  <label for="loginPassword" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="loginPassword" required>
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary">Ingresar</button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">Registrarse</button>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- Modal de Registro -->
+        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registerModalLabel">Registrarse</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-6">
+                <label for="validationCustom01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationCustom01" value="" required>
+                <div class="valid-feedback">
+                  ¡Ingrese un Nombre!
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom02" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="validationCustom02" value="" required>
+                <div class="valid-feedback">
+                  ¡Ingrese un Apellido!
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustomUsername" class="form-label">Correo</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Por favor, Ingrese un Correo Valido.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">Telefono</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                  Proporciona un Telefono válido.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                  Proporcione una Direccion Valida.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom05" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                  Proporcione una Contraseña.
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Acepta los términos y condiciones
+                  </label>
+                  <div class="invalid-feedback">
+                    Debe estar de acuerdo antes de enviar.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Registrarse</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+        </div>
+    </ul> 
+    </div>
+      <i><a class="nav-link active" aria-current="page" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <i class="bi bi-cart-fill"></i></a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">Tu Carrito de compras</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+     </i>
+   </div>
+  </div>
+  </nav><br> 
+<!--Container PSG-->
+<h3 class="text1">Seleciona Camiseta PSG Local/Visita:</h3>
+<div class="seleccion-camiseta">
+  <div id="local"><H5>L</H5></div>
+  <div id="visita"><H5>V</H5></div>
+</div><br>
+    <div class="contenedor">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contenedor-img">
+              <img src="imagenes/Europa/Francia/polera_psg.jpg" id="imgChange8" alt="" class="img-fluid" />
+            </div>
+          </div>
+        <div class="col-lg-6">
+          <div class="contenedor-info-prod">
+            <h1>2024-2025</h1>
+            <div class="contenedor-precio">
+              <span>$50.000 CLP</span>
+            </div>
+  
+          <div class="contenedor-detalles-prod">
+              <div class="form-group">
+                <label for="talla">Talla</label>
+                <select name="size" id="size" class="form-control">
+                  <option disabled selected value="">Escoge una opción</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="XXL">XXL</option>
+                </select>
+              </div>
+          </div>
+  
+          <div class="contenedor-detalles-prod-per">
+            <h4>Personaliza tu camiseta</h4>
+            <section class="regist-name-num">
+              <h>Nombre</h>
+              <input class="form-controls" type="text" name="nombres" id="nombres">
+              <p>$5.000 (indique NOMBRE para camiseta)</p> 
+              <h>Número</h>
+              <input class="form-controls" type="text" name="número" id="numero">
+              <p>$5.000 (indique NUMERO para camiseta)</p>
+            </section>          
+          </div>
+  
+          <div class="contenedor-add-cart">
+            <div class="contenedor-cantidad">
+              <input type="number" placeholder="1" value="1" min="1" class="form-controls input-cantidad"/>
+            </div>
+            <button class="btn btn-add-cart" id="addCartButton">
+              <i>+ <i class="bi bi-cart-fill"></i></i>
+            </button>
+            <button class="btn btn-add-cart">
+              <i>Comprar</i>
+            </button>              
+      </div>
+        
+      <div class="contenedor-descrip">
+          <div class="title-descrip">
+            <h4>Descripción</h4>
+          </div>
+          <div class="text-descrip">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+              delectus commodi, mollitia, consequatur ex dolorum maiores beatae
+              quidem maxime rem, dolore ullam recusandae repudiandae tempora.
+              Unde neque suscipit voluptas facere!, Lorem ipsum dolor, sit amet 
+              consectetur adipisicing elit. Sint delectus commodi, mollitia, 
+              consequatur ex dolorum maiores beatae uidem maxime rem, dolore
+              ullam recusandae repudiandae tempora.Unde neque suscipit voluptas 
+              facere!
+            </p>
+          </div>
+      </div>
+  
+      <div class="contenedor-info-add">
+          <div class="title-info-add">
+            <h4>Información adicional</h4>
+          </div>
+          <div class="text-info-add">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+              delectus commodi, mollitia, consequatur ex dolorum maiores beatae
+              quidem maxime rem, dolore ullam recusandae repudiandae tempora.
+              Unde neque suscipit voluptas facere!
+            </p>
+          </div>
+      </div>
+      <div class="contenedor-social">
+          <h4>Compartir</h4>
+          <div class="contenedor-btn-social">
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>                      
+          </div>
+      </div>
+      </div>   
+      </div>
+      </div>   
+    </div> 
+  <!--sección interes camisetas-->
+  <div class="container">
+    <h3 class="text-center">También te recomendamos</h3><br>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="imagenes/Latinoamerica/ARGENTINA/ARGENTINA VISITA.webp" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">SELECCOÓN ARGENTINA</h4>
+                <h5 class="card-title fw-bold">Visita 2024-2025</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="argentinca.html" class="btn btn-primary ">Ver mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="imagenes/Latinoamerica/chile/Camiseta_Visitante_Chile_2024_Bl_2_840x840.webp" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">SELECIÓN CHILENA</h4>
+                <h5 class="card-title fw-bold">Visita 2024-2025</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="selechile.html" class="btn btn-primary ">Ver mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="imagenes/Latinoamerica/brasil/brasillocal.webp" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">BRASIL</h4>
+                <h5 class="card-title fw-bold">Local 2024-2025</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="brasil.html" class="btn btn-primary ">Ver mas</a>
+              </div>
+            </div>
+          </div>
+        </div><br><br>
+  </div><br><br>
+
+  <!--boton subir-->
+  <a href="#" class="btn-subir">
+    <i class="bi bi-arrow-up"></i></a>   
+ <!--footer-->
+  <footer class="pie-pagina">
+  <div class="grupo-1">
+    <div class="box">
+      <figure>
+        <a href="#"><img src="imagenes/balonllamas.png" alt="logopagina">
+        </a>
+      </figure>
+    </div>
+    <div class="box">
+        <h2>SOBRE NOSOTROS</h2>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, provident?</P>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, provident?</P>
+    </div>
+    <div class="box">
+      <h2>SIGUENOS</h2>
+      <div class="social-media">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-faceboook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+        </svg></a>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagramm" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+        </svg></a>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitterr" viewBox="0 0 16 16">
+          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+        </svg></a>
+      </div>          
+    </div>
+  </div>
+  <div class="grupo-2">
+    <small>&copy; 2024 <b>LATINSTOREFUT</b> - Todos los Derechos Reservados.</small>
+  </div>
+  </footer>
+</body>
+<script src="js/mijs.js"></script>
+<script>
+  (function () {
+    'use strict';
+
+    // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
+    var forms = document.querySelectorAll('.needs-validation');
+
+    // Bucle sobre ellos y evitar el envío
+    Array.prototype.slice.call(forms).forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        form.classList.add('was-validated');
+      }, false);
+    });
+  })();
+</script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"
+></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#loginModal').on('hidden.bs.modal', function () {
+      $('#loginForm')[0].reset();
+    });
+  });
+</script>
+<script>
+  $(document).ready(function() {
+    $('#registerModal').on('hidden.bs.modal', function () {
+      // Obtener el formulario dentro del modal de registro y restablecerlo
+      $('#registerModal form')[0].reset();
+      // También puedes restablecer la validación de los campos si es necesario
+      $('#registerModal form').removeClass('was-validated');
+    });
+  });
+</script>
+</html>
