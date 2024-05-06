@@ -320,9 +320,9 @@
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col-md-4">
             <div class="card">
-              <img src="imagenes/Europa/España/Polera_barcelona.webp" class="card-img img-fluid" alt="...">
+              <img src="imagenes/Latinoamerica/chile/Camiseta_Local_Chile_2024_Rojo_IP8453_01_laydown.avif" class="card-img img-fluid" alt="...">
               <div class="card-body">
-                <h4 class="card-title fw-bold">BARCELONA</h4>
+                <h4 class="card-title fw-bold">SELECCIÓN cHILENA</h4>
                 <h5 class="card-title fw-bold">Local 2024-2025</h5>
                 <div class="rating">
                   <i class="bi bi-star star"></i>
@@ -334,7 +334,7 @@
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="d-flex justify-content-around mb-4">
-                <a href="REAL-BARSA.HTML" class="btn btn-primary ">Ver mas</a>
+                <a href="selechile.html" class="btn btn-primary ">Ver mas</a>
               </div>
             </div>
           </div>
@@ -417,6 +417,18 @@
     <small>&copy; 2024 <b>LATINSTOREFUT</b> - Todos los Derechos Reservados.</small>
   </div>
   </footer>
+   <!--cambio de camiseta segun la seleccion en la carta-->
+<script>
+  window.onload = function() {
+    // Obtener la URL de la imagen de la tarjeta desde la URL actual
+    var urlParams = new URLSearchParams(window.location.search);
+    var imageUrl = urlParams.get('imageUrl');
+
+    if (imageUrl) {
+      document.getElementById('imgChange7').src = imageUrl;
+    }
+  };
+</script>
 </body>
 <script src="js/mijs.js"></script>
 <script>
