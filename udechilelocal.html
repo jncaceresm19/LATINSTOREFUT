@@ -229,7 +229,7 @@
           </div>
         <div class="col-lg-6">
           <div class="contenedor-info-prod">
-            <h1>UNIVERSIDAD DE CHILE 2023-2024</h1>
+            <h1>UNIVERSIDAD DE CHILE 2024-2025</h1>
             <div class="contenedor-precio">
               <span>$50.000 CLP</span>
             </div>
@@ -419,7 +419,20 @@
   <div class="grupo-2">
     <small>&copy; 2024 <b>LATINSTOREFUT</b> - Todos los Derechos Reservados.</small>
   </div>
-  </footer>
+</footer>
+<!--cambio de camiseta segun la seleccion en la carta-->
+<script>
+  window.onload = function() {
+    // Obtener la URL de la imagen de la tarjeta desde la URL actual
+    var urlParams = new URLSearchParams(window.location.search);
+    var imageUrl = urlParams.get('imageUrl');
+
+    if (imageUrl) {
+      // Cambiar la imagen en el contenedor-img con la URL de la imagen de la tarjeta
+      document.getElementById('imgChange2').src = imageUrl;
+    }
+  };
+</script>
 </body>
 <script src="js/mijs.js"></script>
 <script>
