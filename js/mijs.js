@@ -164,4 +164,22 @@ document.addEventListener("DOMContentLoaded", function() {
     // Cambiar la imagen según el color proporcionado en la URL
     changeImage(color);
 });
+document.addEventListener('DOMContentLoaded', function () {
+    var botao = document.getElementById('mostrarWidget');
+    var container = document.getElementById('container');
+    var widgetMostrado = false;
+
+    botao.addEventListener('click', function(event) {
+        event.stopPropagation(); // Detiene la propagación del evento
+
+        if (widgetMostrado) {
+            container.style.display = 'none';
+            widgetMostrado = false;
+        } else {
+            container.style.display = 'block';
+            widgetMostrado = true;
+        }
+    });
+});
+
 
