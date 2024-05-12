@@ -66,7 +66,6 @@
     cursor: pointer;
 }
 /*seleccion camisetas fin*/
-/*seleccion camisetas RESTOMUNDO*/
 .seleccion-camiseta-E H5{
     text-align: center;
 }
@@ -197,9 +196,17 @@
     gap: 5px;
     font-weight: 700;
     cursor: pointer;
+    text-decoration: none;
+
 }
 .btn-add-cart:hover{
     color:#309b9b
+}
+.bi-cart-plus{
+    color: white;
+}
+.bi-cart-plus:hover{
+    color:#309b9b;
 }
 
 .contenedor-descrip{
@@ -253,13 +260,13 @@
     border-right: 50px;
     align-items: center;
 }
-.bi-instagram{
+.contenedor-btn-social.bi-instagram{
     color: black;
 }
-.bi-facebook{
+.contenedor-btn-social.bi-facebook{
     color: black;
 }
-.bi-twitter{
+.contenedor-btn-social.bi-twitter{
     color: black;
     margin-right: 30px;
 }
@@ -338,20 +345,22 @@
 }
 .pie-pagina .grupo-1 .box p{
     color: #e6dfdfea;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 .pie-pagina .grupo-1 .social-media a{
     display: inline-block;
     width: 45px;
     height: 45px;
     line-height: 45px;
-    color: white;
+    color: rgb(255, 255, 255);
     margin-right: 10px;
     transition: all 300ms ease;
+    margin-bottom: 25px;
 }
 .pie-pagina .grupo-1 .social-media a:hover{
     color:#1bb3b4
 }
+
 .pie-pagina .grupo-2{
     padding: 15px 10px;
     text-align: center;
@@ -365,4 +374,3 @@
         padding: 35px 0p;
     }
 }
-
