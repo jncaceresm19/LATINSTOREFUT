@@ -52,6 +52,40 @@
             <li><a class="dropdown-item" href="Uchile.html">Universidad de Chile</a></li>
           </ul>
         </li>  
+        <div>
+          <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tabla Posiciones
+                  </a>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                      <style>
+                          .botao {
+                              max-width: 200px; /* Establece el ancho máximo del botón */
+                              max-height: 50px; /* Establece la altura máxima del botón */
+                              overflow: hidden; /* Oculta cualquier contenido que supere los límites */
+                              white-space: nowrap; /* Evita el salto de línea del texto dentro del botón */
+                          }
+                      </style>
+                      <button id="mostrarWidget" class="botao">Premier League</button>
+                      <div id="container" class="widget-container" style="display: none;">
+                          <div id="wg-api-football-standings"
+                              data-host="v3.football.api-sports.io"
+                              data-key="1cdc79f4241570006e26b85d62d18e0e"
+                              data-league="39"
+                              data-team=""
+                              data-season="2023"
+                              data-theme=""
+                              data-show-errors="false"
+                              data-show-logos="true"
+                              class="wg_loader">
+                          </div>
+                      </div>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-send-fill"></i> Envios</a>
         </li>
@@ -84,6 +118,7 @@
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         <button type="button" class="btn btn-secondary">Enviar</button>
                     </div>
+                    
                 </div>
             </div>
         </div> 
@@ -93,6 +128,9 @@
             <i class="bi bi-person-fill"></i>
           </a>
         </li>
+        <div>
+          
+        </div>
         <!-- Modal de Inicio de Sesión -->
         <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -513,4 +551,8 @@
       });
     });
   </script>
+  <script
+  type="module"
+  src="https://widgets.api-sports.io/2.0.3/widgets.js">
+</script>
 </html>
