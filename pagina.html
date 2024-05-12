@@ -461,6 +461,30 @@
           <a href="https://wa.me/5690778025" target="_blank" ><i class="bi bi-whatsapp"></i></a>
           </div></P>
       </div>
+      <style>
+        .botao {
+            max-width: 200px; /* Establece el ancho máximo del botón */
+            max-height: 50px; /* Establece la altura máxima del botón */
+            overflow: hidden; /* Oculta cualquier contenido que supere los límites */
+            white-space: nowrap; /* Evita el salto de línea del texto dentro del botón */
+        }
+    </style>
+    
+    <button id="mostrarWidget" class="botao">Premier League</button>
+    <div id="container" class="widget-container" style="display: none;">
+        <div id="wg-api-football-standings"
+            data-host="v3.football.api-sports.io"
+            data-key="880289a89d1a5ac82747ff673112672a"
+            data-league="39"
+            data-team=""
+            data-season="2021"
+            data-theme=""
+            data-show-errors="false"
+            data-show-logos="true"
+            class="wg_loader">
+        </div>
+    </div>
+
     </div>
     <div class="grupo-2">
       <small>&copy; 2024 <b>LATINSTOREFUT</b> - Todos los Derechos Reservados.</small>
@@ -511,4 +535,9 @@
       });
     });
   </script>
+    <script
+    type="module"
+    src="https://widgets.api-sports.io/2.0.3/widgets.js">
+  </script>
+  
 </html>
